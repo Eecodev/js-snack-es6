@@ -89,9 +89,6 @@ const studentsList = [
     }
 ]
 
-let listUpperCase = studentsList.forEach((element)=>{
-    return {
-        
-    }
+let listUpperCase = studentsList.forEach((el) =>{
+    
 })
-console.log(listUpperCase);
