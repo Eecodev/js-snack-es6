@@ -26,16 +26,16 @@ Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti supe
 /*
  *SNACK 1
 */
-const tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+// const tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
 
-let assegnazionePosti = tavoloVip.map((el, index)=>{
-    return {
-        Guest: el,
-        Tavolo: 'Vip',
-        Seat: index + 1
-    }
-})
-console.log(assegnazionePosti);
+// let assegnazionePosti = tavoloVip.map((el, index)=>{
+//     return {
+//         Guest: el,
+//         Tavolo: 'Vip',
+//         Seat: index + 1
+//     }
+// })
+// console.log(assegnazionePosti);
 
 // let result = []
 // tavoloVip.forEach((element, index)=>{
@@ -89,6 +89,20 @@ const studentsList = [
     }
 ]
 
-let listUpperCase = studentsList.forEach((el) =>{
-    
+/*
+* method map
+*/
+// let listUpperCase = studentsList.map((el) =>{
+//     return el.name.toUpperCase()
+// })
+// console.log(listUpperCase);
+
+/*
+* method forEach
+*/
+
+let listUpperCase = []
+studentsList.forEach((el)=>{
+    listUpperCase.push(el.name.toUpperCase());
 })
+console.log(listUpperCase);
