@@ -106,3 +106,9 @@ studentsList.forEach((el)=>{
     listUpperCase.push(el.name.toUpperCase());
 })
 console.log(listUpperCase);
+
+let scoreOver70 = studentsList.filter((el)=> el.grades > 70);
+console.log(scoreOver70);
+
+let scoreOver70IdOver120 = studentsList.filter((el)=> el.grades > 70 & el.id > 120);
+console.log(scoreOver70IdOver120);
