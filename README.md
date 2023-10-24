@@ -1,6 +1,7 @@
 # js-snack-es6
 
 • SNACK 1
+
 Dwayne Johnson ci ha chiesto di creare i segnaposto per il tavolo degli invitati alla sua mega festa vip.
 
 Ci ha lasciato il nome del tavolo ("Tavolo Vip") e la lista degli invitati in ordine di posto:
@@ -11,6 +12,7 @@ Ma la tipografia per stampare il tutto vuole che le mandiamo una lista di ospiti
 Generiamo e stampiamo in console la lista per i segnaposto.
 
 • SNACK 2
+
 Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
 
 Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
