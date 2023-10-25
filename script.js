@@ -26,16 +26,16 @@ Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti supe
 /*
  *SNACK 1
 */
-const tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+// const tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
 
-let assegnazionePosti = tavoloVip.map((el, index)=>{
-    return {
-        Guest: el,
-        Tavolo: 'Vip',
-        Seat: index + 1
-    }
-})
-console.log(assegnazionePosti);
+// let assegnazionePosti = tavoloVip.map((el, index)=>{
+//     return {
+//         Guest: el,
+//         Tavolo: 'Vip',
+//         Seat: index + 1
+//     }
+// })
+// console.log(assegnazionePosti);
 
 
 
@@ -157,7 +157,15 @@ const obj = [
     }
 ]
 
-let lighterObj = 5;
+let lighterObj;
 for(let i = 0; i < obj.length; i++){
-   
+    if(i === 0){
+        lighterObj = obj[i];
+    }
+    if(obj[i].peso < lighterObj.peso){
+        lighterObj = obj[i];
+    }
 }
+console.log(lighterObj);
+
+
