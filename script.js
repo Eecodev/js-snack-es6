@@ -132,28 +132,28 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 
 const obj = [
     {
-        nome: 'Scott Speedster',
-        peso: 6
+        name: 'Scott Speedster',
+        kg: 6
     },
     {
-        nome: 'Canyon Grail',
-        peso: 5
+        name: 'Canyon Grail',
+        kg: 5
     },
     {
-        nome: 'Giant Defy Advanced',
-        peso: 8
+        name: 'Giant Defy Advanced',
+        kg: 8
     },
     {
-        nome: 'Canyon Endurace',
-        peso: 7
+        name: 'Canyon Endurace',
+        kg: 7
     },
     {
-        nome: 'Bianchi Sprint',
-        peso: 10
+        name: 'Bianchi Sprint',
+        kg: 10
     },
     {
-        nome: 'Trek Emonda',
-        peso: 9
+        name: 'Trek Emonda',
+        kg: 9
     }
 ]
 
@@ -169,3 +169,5 @@ for(let i = 0; i < obj.length; i++){
 console.log(lighterObj);
 
 
+// const {name, kg} = lighterObj;
+// console.log(name, kg);
