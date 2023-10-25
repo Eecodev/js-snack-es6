@@ -26,16 +26,18 @@ Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti supe
 /*
  *SNACK 1
 */
-// const tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+const tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
 
-// let assegnazionePosti = tavoloVip.map((el, index)=>{
-//     return {
-//         Guest: el,
-//         Tavolo: 'Vip',
-//         Seat: index + 1
-//     }
-// })
-// console.log(assegnazionePosti);
+let assegnazionePosti = tavoloVip.map((el, index)=>{
+    return {
+        Guest: el,
+        Tavolo: 'Vip',
+        Seat: index + 1
+    }
+})
+console.log(assegnazionePosti);
+
+
 
 // let result = []
 // tavoloVip.forEach((element, index)=>{
@@ -51,64 +53,111 @@ Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti supe
  *SNACK 2
 */
 
-const studentsList = [
-    {
-        id: 213,
-        name: 'Marco della Rovere',
-        grades: 78
-    },
-    {
-        id: 110,
-        name:'Paola Cortellessa',
-        grades: 96
-    },
-    {
-        id: 250,
-        name: 'Andrea Mantegna',
-        grades: 48
-    },
-    {
-        id: 145,
-        name: 'Gaia Borromini',
-        grades: 74
-    },
-    {
-        id: 196,
-        name: 'Luigi Grimaldello',
-        grades: 68
-    },
-    {
-        id: 102,
-        name: 'Piero della Francesca',
-        grades: 50
-    },
-    {
-        id: 120,
-        name: 'Francesca da Polenta',
-        grades: 84
-    }
-]
+// const studentsList = [
+//     {
+//         id: 213,
+//         name: 'Marco della Rovere',
+//         grades: 78
+//     },
+//     {
+//         id: 110,
+//         name:'Paola Cortellessa',
+//         grades: 96
+//     },
+//     {
+//         id: 250,
+//         name: 'Andrea Mantegna',
+//         grades: 48
+//     },
+//     {
+//         id: 145,
+//         name: 'Gaia Borromini',
+//         grades: 74
+//     },
+//     {
+//         id: 196,
+//         name: 'Luigi Grimaldello',
+//         grades: 68
+//     },
+//     {
+//         id: 102,
+//         name: 'Piero della Francesca',
+//         grades: 50
+//     },
+//     {
+//         id: 120,
+//         name: 'Francesca da Polenta',
+//         grades: 84
+//     }
+// ]
 
-/*
-* method map
-*/
-// let listUpperCase = studentsList.map((el) =>{
-//     return el.name.toUpperCase()
+// /*
+// * method map
+// */
+// // let listUpperCase = studentsList.map((el) =>{
+// //     return el.name.toUpperCase()
+// // })
+// // console.log(listUpperCase);
+
+// /*
+// * method forEach
+// */
+
+// let listUpperCase = []
+// studentsList.forEach((el)=>{
+//     listUpperCase.push(el.name.toUpperCase());
 // })
 // console.log(listUpperCase);
 
+// let scoreOver70 = studentsList.filter((el)=> el.grades > 70);
+// console.log(scoreOver70);
+
+// let scoreOver70IdOver120 = studentsList.filter((el)=> el.grades > 70 & el.id > 120);
+// console.log(scoreOver70IdOver120);
+
 /*
-* method forEach
+* • SNACK 3
+
+Creare un array di oggetti:
+
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+
+Stampare in console la bici con peso minore utilizzando destructuring e template literal
 */
 
-let listUpperCase = []
-studentsList.forEach((el)=>{
-    listUpperCase.push(el.name.toUpperCase());
-})
-console.log(listUpperCase);
 
-let scoreOver70 = studentsList.filter((el)=> el.grades > 70);
-console.log(scoreOver70);
+/*
+ *SNACK 3
+*/
 
-let scoreOver70IdOver120 = studentsList.filter((el)=> el.grades > 70 & el.id > 120);
-console.log(scoreOver70IdOver120);
+const obj = [
+    {
+        nome: 'Scott Speedster',
+        peso: 6
+    },
+    {
+        nome: 'Canyon Grail',
+        peso: 5
+    },
+    {
+        nome: 'Giant Defy Advanced',
+        peso: 8
+    },
+    {
+        nome: 'Canyon Endurace',
+        peso: 7
+    },
+    {
+        nome: 'Bianchi Sprint',
+        peso: 10
+    },
+    {
+        nome: 'Trek Emonda',
+        peso: 9
+    }
+]
+
+let lighterObj = 5;
+for(let i = 0; i < obj.length; i++){
+   
+}
