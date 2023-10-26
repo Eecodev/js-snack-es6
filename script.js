@@ -158,36 +158,53 @@ const obj = [
 ]
 
 
-let lighterObj;
-for(let i = 0; i < obj.length; i++){
-    if(i === 0){
-        lighterObj = obj[i];
-    }
-    if(obj[i].kg < lighterObj.kg){
-        lighterObj = obj[i];
-    }
-}
+// let lighterObj;
+// for(let i = 0; i < obj.length; i++){
+//     if(i === 0){
+//         lighterObj = obj[i];
+//     }
+//     if(obj[i].kg < lighterObj.kg){
+//         lighterObj = obj[i];
+//     }
+// }
 
 
-const {name, kg} = lighterObj;
-console.log(name, kg);
+// const {name, kg} = lighterObj;
+// console.log(name, kg);
 
-const rowEl = document.querySelector(".row");
-console.log(rowEl);
+// const rowEl = document.querySelector(".row");
+// console.log(rowEl);
 
 
-function printBikes(bike){
-    const divEl = document.createElement('div');
-    col.classList.add("col-4");
-    const template =`
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">${bike.name}</h5>
-            <p class="card-text">${bike.kg}</p>
-            <a href="#" class="btn btn-primary">Get Info</a>
-        </div>
-    </div>
-    `
-    col.innerHTML = template;
-    rowEl.append(col);
-}
+// function printBikes(bike){
+//     const divEl = document.createElement('div');
+//     col.classList.add("col-4");
+//     const template =`
+//     <div class="card" style="width: 18rem;">
+//         <div class="card-body">
+//             <h5 class="card-title">${bike.name}</h5>
+//             <p class="card-text">${bike.kg}</p>
+//             <a href="#" class="btn btn-primary">Get Info</a>
+//         </div>
+//     </div>
+//     `
+//     col.innerHTML = template;
+//     rowEl.append(col);
+// }
+
+//array sort
+// const lighterObj = obj.sort((a,b)=> a.peso - b.peso)[0];
+// console.log(lighterObj);
+
+//array reduce (with accumulator and element as default properties to use)
+const lighterObj = obj.reduce((accumulator, element, index, array)=> accumulator = (element.peso < accumulator.peso) ? element : accumulator, );
+console.log(lighterObj);
+
+const {kg, name} = lighterObj;
+document.querySelector('container').innerHTML =
+`
+<ul>
+<li>Name: ${name}</li>
+<li>Kg: ${kg}</li>
+</ul>`;
+
